@@ -84,6 +84,6 @@ what to send.
 
 All relevant database stuff is stored in a wrapper and can be accessed.
 
-To contact other microservices use `contact_mircoservice` which takes the name, endpoint and data.
+To contact other microservices use `contact_microservice` which takes the name, endpoint and data.
 
 If you have further questions or want more insight ask @SpartanerSpaten or @Defelo.
