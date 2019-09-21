@@ -1,30 +1,29 @@
 # Backend Introduction
 
-This is an quick Introduction for people who want to contribute too the backend of cryptic-game. This file only shows implementations in Python.
+This is a quick introduction for people who want to contribute to the backend of cryptic-game. This file only shows implementations in Python.
 
 ## Structure
 
-The Backend is split into multiple parts called microservices written in Python or Java. They communicate over our libaries with an main server which handels authentication and communication. 
+The backend is split into multiple parts called microservices written in Python or Java. They communicate over our libraries with a main server which handles authentication and communication. 
 
 ![](./img/struct.png)
 
-Furthermore he also allows communication between microservices.
+Furthermore the server also allows communication between microservices.
 
 ## Our Library
 
 see [PyPI](https://pypi.org/project/cryptic-game/)
 
-#### What does it ?
+#### What does it do ?
 
- - Establiches Connection
- - Handels Endpoints
- - Handels Database Connection
- - Outvalidate Input
+ - Establishes connections
+ - Handles endpoints
+ - Handles database connection
+ - Validates input from client
  
- #### How to use it ?
+#### How to use it ?
  
- You can define two types of endpoints the first **user_endpoint** this point is accessable from outside and **microservice_endpoint** which can only be called by other 
- microservices.  
+ You can define two types of endpoints: **user_endpoint** is accessible from outside and **microservice_endpoint** can only be called by other microservices.  
  
  
  ```python
@@ -80,11 +79,11 @@ if __name__ == "__main__":
     ms.run()
 ```
 
-For the Microservice Endpoint its not necessary to define your requirements other developer of this Project should know
+For the microservice endpoint it is not necessary to define your requirements. Other developers of this project should know 
 what to send.
 
 All relevant database stuff is stored in a wrapper and can be accessed.
 
-Too contact other microservices use `contact_mircoservice` which takes the name, endpoint, data.
+To contact other microservices use `contact_mircoservice` which takes the name, endpoint and data.
 
-When you have further questions or want more insight ask @SpartanerSpaten.
+If you have further questions or want more insight ask @SpartanerSpaten or @Defelo.
